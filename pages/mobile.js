@@ -33,22 +33,72 @@ class mobile extends React.Component {
               </ImageArea>
               <NavClose onClick={() => this.setState({ visibleNav: false })} />
               <NavWrapper>
-                <NavItem>Home</NavItem>
-                <NavItem>About US</NavItem>
-                <NavItem>Team</NavItem>
-                <NavItem>Token Distribution</NavItem>
-                <NavItem>Readmap</NavItem>
-                <NavItem>Contact</NavItem>
-                <NavItem>Disclaimer</NavItem>
+                <NavItem
+                  onClick={() => {
+                    this.setState({ visibleNav: false });
+                    window.location.href = "/#introduction";
+                  }}
+                >
+                  Home
+                </NavItem>
+                <NavItem
+                  onClick={() => {
+                    this.setState({ visibleNav: false });
+                    window.location.href = "/#aboutUs";
+                  }}
+                >
+                  About US
+                </NavItem>
+                <NavItem
+                  onClick={() => {
+                    this.setState({ visibleNav: false });
+                    window.location.href = "/#team";
+                  }}
+                >
+                  Team
+                </NavItem>
+                <NavItem
+                  onClick={() => {
+                    this.setState({ visibleNav: false });
+                    window.location.href = "/#tokenDistribution";
+                  }}
+                >
+                  Token Distribution
+                </NavItem>
+                <NavItem
+                  onClick={() => {
+                    this.setState({ visibleNav: false });
+                    window.location.href = "/#roadmap";
+                  }}
+                >
+                  Roadmap
+                </NavItem>
+                <NavItem
+                  onClick={() => {
+                    this.setState({ visibleNav: false });
+                    window.location.href = "/#contact";
+                  }}
+                >
+                  Contact
+                </NavItem>
+                <NavItem
+                  onClick={() => {
+                    this.setState({ visibleNav: false });
+                    window.location.href = "/#disclaimer";
+                  }}
+                >
+                  Disclaimer
+                </NavItem>
               </NavWrapper>
             </Nav>
           </Header>
           <Content>
             <KskinIntroductionArea
+              id={"introduction"}
               src={"mobileImages/KSKINIntroduction.png"}
               onClick={() => (window.location = "http://finance.kskin.io/")}
             />
-            <AboutUs>
+            <AboutUs id={"aboutUs"}>
               <div className="carousel-container">
                 <Carousel showStatus={false} showArrows={false}>
                   <AboutUsCarousel src={"mobileImages/aboutusBox1.png"} />
@@ -57,7 +107,7 @@ class mobile extends React.Component {
                 </Carousel>
               </div>
             </AboutUs>
-            <TeamArea>
+            <TeamArea id={"team"}>
               <div className="carousel-container">
                 <Carousel showStatus={false} showArrows={false}>
                   <TeamCarousel src={"mobileImages/teamBox1.png"} />
@@ -67,9 +117,12 @@ class mobile extends React.Component {
                 </Carousel>
               </div>
             </TeamArea>
-            <TokenDistribution src={"mobileImages/tokenDistribution.png"} />
-            <RoadMap src={"mobileImages/roadMap.png"} />
-            <Contact>
+            <TokenDistribution
+              id={"tokenDistribution"}
+              src={"mobileImages/tokenDistribution.png"}
+            />
+            <RoadMap id={"roadmap"} src={"mobileImages/roadMap.png"} />
+            <Contact id={"contact"}>
               <ContactButtonArea>
                 <div
                   style={{
@@ -108,15 +161,20 @@ class mobile extends React.Component {
                 />
               </ContactButtonArea>
             </Contact>
-            <Disclaimer src={"mobileImages/disclaimer.png"} />
+            <Disclaimer id={"disclaimer"} src={"mobileImages/disclaimer.png"} />
           </Content>
         </LayoutMobileContainer>
 
         <style jsx global>{`
           body {
+            height: 100%;
             margin: 0px;
             padding: 0px;
           }
+          #__next {
+            height: 100%;
+          }
+
           .carousel .slide {
             background: transparent;
           }
@@ -247,6 +305,8 @@ const LayoutMobileContainer = styled.div`
 `;
 
 const Header = styled.div`
+  /* position: absolute; */
+
   display: flex;
   background-color: rgba(0, 0, 0, 0.49);
   align-items: center;
