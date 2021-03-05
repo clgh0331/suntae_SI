@@ -10,9 +10,12 @@
   "dependencies": {
     "mobile-detect": "^1.4.4",
     "next": "10.0.7",
+    "pure-react-carousel": "^1.27.6",
     "react": "17.0.1",
     "react-device-detect": "^1.15.0",
     "react-dom": "17.0.1",
+    "react-img-carousel": "^2.0.0",
+    "react-responsive-carousel": "^3.2.13",
     "styled-components": "^5.2.1"
   }
 }
