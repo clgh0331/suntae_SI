@@ -251,7 +251,7 @@ class desk extends React.Component {
 }
 
 const Container = styled.div`
-  min-width: 1920px;
+  // min-width: 1920px;
 `;
 
 const Header = styled.div`
@@ -307,7 +307,12 @@ const LogoText = styled.span`
   color: #ffffff;
 `;
 
-const FullpageWrapper = styled.div``;
+const FullpageWrapper = styled.div`
+  min-width: 1920px;
+  width: 100vw;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+`;
 
 const Next = styled.div`
   color: white;
@@ -333,7 +338,7 @@ const SectionHome = styled(Section)`
   background-image: url("/image/Home.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 50%;
 `;
 
 const SectionAbout = styled(Section)`
