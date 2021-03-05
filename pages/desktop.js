@@ -7,7 +7,7 @@ class desk extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      section: "Home",
+      section: "Home"
     };
   }
 
@@ -18,13 +18,13 @@ class desk extends React.Component {
     "Token-Distrubution",
     "Roadmap",
     "Contract",
-    "Disclaimer",
+    "Disclaimer"
   ];
 
-  setSection = (path) => {
+  setSection = path => {
     window.location.href = "/#" + path;
     this.setState({
-      section: path,
+      section: path
     });
   };
 
@@ -126,14 +126,14 @@ class desk extends React.Component {
                           style={{
                             display: "flex",
                             justifyContent: "space-between",
-                            height: "70px",
+                            height: "70px"
                           }}
                         >
                           <div
                             style={{
                               display: "flex",
                               alignItems: "center",
-                              cursor: "pointer",
+                              cursor: "pointer"
                             }}
                             onClick={() =>
                               window.open("mailto:contact@kskin.io")
@@ -151,7 +151,7 @@ class desk extends React.Component {
                             style={{
                               display: "flex",
                               alignItems: "center",
-                              cursor: "pointer",
+                              cursor: "pointer"
                             }}
                             onClick={() =>
                               window.open("https://t.me/kskinchannel")
@@ -169,14 +169,14 @@ class desk extends React.Component {
                           style={{
                             display: "flex",
                             justifyContent: "space-between",
-                            height: "70px",
+                            height: "70px"
                           }}
                         >
                           <div
                             style={{
                               display: "flex",
                               alignItems: "center",
-                              cursor: "pointer",
+                              cursor: "pointer"
                             }}
                             onClick={() =>
                               window.open(
@@ -194,7 +194,7 @@ class desk extends React.Component {
                             style={{
                               display: "flex",
                               alignItems: "center",
-                              cursor: "pointer",
+                              cursor: "pointer"
                             }}
                             onClick={() =>
                               window.open("https://t.me/kskingroup")
@@ -273,7 +273,7 @@ const HeaderNavContainer = styled.div`
 `;
 
 const HeaderItem = styled.div`
-  ${(props) => (props.active ? "text-shadow: 0 0 6px #ff564e;" : null)}
+  ${props => (props.active ? "text-shadow: 0 0 6px #ff564e;" : null)}
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -281,7 +281,7 @@ const HeaderItem = styled.div`
   line-height: 1.5;
   letter-spacing: normal;
   text-align: left;
-  color: ${(props) => (props.active ? "#ff564e" : "#fff")};
+  color: ${props => (props.active ? "#ff564e" : "#fff")};
   margin-left: 46px;
   cursor: pointer;
 `;
@@ -331,30 +331,51 @@ const Section = styled.div`
 
 const SectionHome = styled(Section)`
   background-image: url("/image/Home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 `;
 
 const SectionAbout = styled(Section)`
   background-image: url("/image/About.png");
+  background-size: cover;
+  ackground-repeat: no-repeat;
+  background-position: center;
 `;
 
 const SectionTeam = styled(Section)`
   background-image: url("/image/Team.png");
+  background-size: cover;
+  ackground-repeat: no-repeat;
+  background-position: center;
 `;
 
 const SectionToken = styled(Section)`
   background-image: url("/image/Token.png");
+  background-size: cover;
+  ackground-repeat: no-repeat;
+  background-position: center;
 `;
 
 const SectionRoadmap = styled(Section)`
   background-image: url("/image/Roadmap.png");
+  background-size: cover;
+  ackground-repeat: no-repeat;
+  background-position: center;
 `;
 
 const SectionContract = styled(Section)`
   background-image: url("/image/bg_5.png");
+  background-size: cover;
+  ackground-repeat: no-repeat;
+  background-position: center;
 `;
 
 const SectionDisclaimer = styled(Section)`
   background-image: url("/image/Disclaimer.png");
+  background-size: cover;
+  ackground-repeat: no-repeat;
+  background-position: center;
 `;
 
 const SectionHomeButton = styled.div`
