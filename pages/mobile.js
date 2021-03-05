@@ -46,6 +46,9 @@ class mobile extends React.Component {
             margin: 0px;
             padding: 0px;
           }
+          .carousel .slide {
+            background: transparent;
+          }
         `}</style>
       </>
     );
