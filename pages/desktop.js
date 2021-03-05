@@ -103,10 +103,18 @@ class desk extends React.Component {
                     <Next>Next</Next>
                     <NextIcon src="/image/ic_down.png"></NextIcon>
                   </SectionHome>
-                  <SectionAbout className="section About-us"></SectionAbout>
-                  <SectionTeam className="section Team"></SectionTeam>
-                  <SectionToken className="section Token-Distrubution"></SectionToken>
-                  <SectionRoadmap className="section Roadmap"></SectionRoadmap>
+                  <SectionAbout className="section About-us">
+                    <NextIcon src="/image/ic_down.png"></NextIcon>
+                  </SectionAbout>
+                  <SectionTeam className="section Team">
+                    <NextIcon src="/image/ic_down.png"></NextIcon>
+                  </SectionTeam>
+                  <SectionToken className="section Token-Distrubution">
+                    <NextIcon src="/image/ic_down.png"></NextIcon>
+                  </SectionToken>
+                  <SectionRoadmap className="section Roadmap">
+                    <NextIcon src="/image/ic_down.png"></NextIcon>
+                  </SectionRoadmap>
                   <SectionContract className="section Contract">
                     <SectionWrapper>
                       <SectionTitleContainer>
@@ -201,6 +209,7 @@ class desk extends React.Component {
                         </div>
                       </SectionContractBox>
                     </SectionWrapper>
+                    <NextIcon src="/image/ic_down.png"></NextIcon>
                   </SectionContract>
                   <SectionDisclaimer className="section Disclaimer"></SectionDisclaimer>
                 </FullpageWrapper>
